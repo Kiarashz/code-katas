@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.telflow</groupId>
-  <artifactId>string_counter</artifactId>
+  <artifactId>count_words</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 

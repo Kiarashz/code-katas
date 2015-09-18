@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  * The main class for the console application to read a text file and count the number of words
  * that meet the given condition on command line.
  *
- * Usage: java -cp [packaged jar file] com.telflow.WordCounter startsWith=m,M longerThan=5 [filename]
+ * Usage: java -cp [packaged jar file] com.telflow.CountWords startsWith=m,M longerThan=5 [filename]
  *
  * The value for <strong>startsWith</strong> specifies the restriction on valid starting characters of the words
  * that need to be counted.
@@ -22,7 +22,7 @@ import java.util.stream.Stream;
  * The value for <strong>longerThan</strong> shows the the minimum length of all words that need to be counted.
  *
  */
-public class WordCounter {
+public class CountWords {
 
     public final static String STARTS_WITH = "startsWith";
     public final static String LONGER_THAN = "longerThan";
