@@ -1,0 +1,9 @@
+create table myTable (
+field1 	varchar2(20),
+field2	varchar2(20) not null,
+field3	varchar2(25) constrain field3Checker
+	check (field3 in ('my value 1', 'my value 2', 'y value 3') ) ,
+field4	number,
+constrain myTablePK primary key ( field1 ),
+constrain myTableFK foreign key ( field2 ), references anOtherTable (field2)
+);

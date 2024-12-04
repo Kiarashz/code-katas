@@ -1,0 +1,15 @@
+select id , message_number, faultDate, recoverDate , dti , faultCount from tempTable where (message_number = 1041001) and (key_information = '') and (faultCount <> 0)
+
+select count(*) from message where message_number = 1041001
+
+drope table tempTable
+
+select  id , message_number, faultDate, recoverDate , key_information , faultCount  from tempTable where (message_number=1041001) and (faultCount <> 0) and (key_information='slk_no=0057')
+
+create table tempTable (id number, message_number number, faultDate date, recoverDate date, key_information varchar(10), faultCount number)
+
+
+insert into tempTable (id,message_number,faultDate,key_information,faultCount) values(345 , 1041001,#12 18 2006 12:00#,'dti000322' ,1)
+
+
+update tempTable set faultCount = 2 where (message_number = 1041001) and (key_information ='dti000322') and (faultCount <> 0)

@@ -1,0 +1,8 @@
+delete from myTable
+where field1 = 'value1'
+
+
+-------------------------
+To delete all rows (more performance than delete):
+
+truncate table  myTable

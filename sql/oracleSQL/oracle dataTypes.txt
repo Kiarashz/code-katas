@@ -1,0 +1,26 @@
+Number (5,2)  // 5=all digits,  2=fragtion digitd 
+Decimal
+float
+
+----------------------------
+
+char     // up to 255 chars
+varchar  // dont use it anymore
+varchar2 // to 2000 chARS
+Long	// more than 2000  (CLOB)
+----------------------------
+
+DateTime
+
+----------------------------
+
+Long Raw  // BLOB
+
+Raw	// up 2 255 bytes
+
+----------------------------
+
+
+
+----------------------------
+

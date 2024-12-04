@@ -1,0 +1,9 @@
+ select username,account_status,default_tablespace,temporary_tablespace from dba_users;
+
+select  FILE_NAME,TABLESPACE_NAME,BLOCKS,STATUS,AUTOEXTENSIBLE,MAXBYTES,MAXBLOCKS from dba_data_files;
+
+v$datafile
+
+v$tempfile
+
+alter database datafile 'd:\oracle\data.ora' autoextent on next 1M maxsize unlimited;

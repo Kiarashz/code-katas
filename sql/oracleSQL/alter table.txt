@@ -1,0 +1,15 @@
+alter table myTable
+ADD ( fName varchar2(25));
+
+alter table myTable drop column column1;
+
+
+alter table myTable
+Modify (fName varchar2(20));
+
+
+alter table myTable
+Drop primary key;
+
+alter table myTable
+Drop constrain myConstrain

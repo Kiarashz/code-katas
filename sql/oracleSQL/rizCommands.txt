@@ -1,0 +1,24 @@
+Alter session set nls_calendar='Persian'
+-------------------------
+create table centers (
+centerID varchar2(20),
+centerName nvarchar2(50) not null,
+status char(1),
+constraint centersPK primary key (centerID,status)
+)
+
+-----------------------
+create table officeCodes(
+centerID varchar2(20) not null,
+officeCode varchar2(6) not null,
+constraint officeCodesPK primary key (centerID,officeCode),
+constraint offceCodesFK foreign key (centerID) references centers(centerID)
+)
+--------------------------------------
+create table BaLx2 (
+aSub varchar2(11) not null,
+bSub varchar2(21) not null,
+startDate date not null,
+dur number(7,0),
+pulse number(11,0)
+)

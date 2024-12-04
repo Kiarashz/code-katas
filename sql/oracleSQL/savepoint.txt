@@ -1,0 +1,7 @@
+savepoint mySavePointPosition;
+
+
+...
+
+
+rollback [to mySavePointPosition];

@@ -1,0 +1,52 @@
+Length:
+------------------------------
+select lastName , length(lastName)
+from myTable;
+
+#################################
+
+
+Substr:
+------------------------------
+select lastName , substr(lastName,1,3)
+from myTable;
+
+1 == position
+3 == length
+#################################
+
+Replace:
+------------------------------
+select lastName , Replace(lastName,'existing','replace With')
+from myTable;
+
+#################################
+
+Ltrim , Rtrim :
+------------------------------
+select lastName , Ltrim(lastName,'chars2delete')
+from myTable;
+
+This function is able to delete spaces and even every chars which we want.
+#################################
+
+
+Lpad , Rpad:  (reverse of ltrim , rtrim)
+------------------------------
+select lastName , lPad(lastName,35,'x')
+from myTable;
+
+
+35 == length of returning String
+#################################
+
+
+Upper , Lower , InitCap
+
+
+#################################
+
+
+
+
+

@@ -1,0 +1,1 @@
+create [unique] index myIndex on myTable(col1,...colN);

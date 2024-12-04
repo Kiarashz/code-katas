@@ -73,3 +73,7 @@ outTmp/
 /test.output
 /kotlin-native/dist
 kotlin-ide/
+*.tar
+*.gz
+*.tar.gz
+*.mwb

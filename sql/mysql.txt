@@ -1,0 +1,9 @@
+load data infile './ANZ.csv' into table transactions fields terminated by ',' Optionally enclosed by '"' LINES TERMINATED BY '\n' (@d, amount, description, f4,f5,f6,f7,f8) set tdate = str_to_date(@d, '%d/%m/%Y');
+
+
+ CREATE TABLE `trans` (
+  `tdate` date DEFAULT NULL,
+  `amount` decimal(9,2) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL);
+
+

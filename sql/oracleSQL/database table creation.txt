@@ -1,0 +1,28 @@
+ACCESS COMMAND
+================================================================
+create table 'testTable'  
+(fn char(7), blk_no char(5), n_clg char(11), clg_cat char(2),
+	n_cld char(20), sDate char(8), tm char(8), dur number, 
+	rn_ic char(10), rn_og char(10), tarf number, mbi char(3), 
+	cl_cat char(2)
+)
+
+********************************************************************
+
+SQL Command
+=================================================================
+CREATE TABLE [dbo].[testTable] (
+	[fn] [nchar] (7) COLLATE Arabic_CI_AS NULL ,
+	[blk_no] [nchar] (5) COLLATE Arabic_CI_AS NULL ,
+	[n_clg] [nchar] (11) COLLATE Arabic_CI_AS NULL ,
+	[clg_cat] [nchar] (2) COLLATE Arabic_CI_AS NULL ,
+	[n_cld] [nchar] (20) COLLATE Arabic_CI_AS NULL ,
+	[sDate] [nchar] (8) COLLATE Arabic_CI_AS NULL ,
+	[tm] [nchar] (8) COLLATE Arabic_CI_AS NULL ,
+	[dur] [float] NULL ,
+	[rn_ic] [nchar] (10) COLLATE Arabic_CI_AS NULL ,
+	[rn_og] [nchar] (10) COLLATE Arabic_CI_AS NULL ,
+	[tarf] [float] NULL ,
+	[mbi] [nchar] (3) COLLATE Arabic_CI_AS NULL ,
+	[cl_cat] [nchar] (2) COLLATE Arabic_CI_AS NULL 
+) ON [PRIMARY]

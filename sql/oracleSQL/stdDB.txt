@@ -1,0 +1,19 @@
+create table centers (name nvarchar2(50) , centerID char(10) , cType char(20),
+constraint centersPK primary key (centerID));
+=========================================================================================
+create table employee 
+(fName nvarchar2(50) , 
+lName nvarchar2(50) , 
+post nvarchar2(50) , 
+centerID char(10),
+stuID char(10),
+eID char(15),
+constraint employeePK primary key (eID),
+constraint employeeFK foreign key (centerID) references centers(centerID) );
+=========================================================================================
+create table ddf
+(dti char(6) , 
+jumper number(4,0),
+shahri char(1) default 'N' ,
+constraint ddfPK primary key (dti));
+=========================================================================================
