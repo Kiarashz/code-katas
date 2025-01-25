@@ -184,7 +184,11 @@ public class CountWords {
      * @return Stream of words
      */
     protected static Stream<String> readWordsIntoStream(String filename) {
-        List<String> words = new LinkedList<>();
+        /*
+         *  Introduce a bug by uncommenting the following line and commenting the next line.
+         *  List<String> words = new LinkedList<>();
+         */
+        List<String> words = Collections.synchronizedList(new LinkedList<>());
         try (Stream<String> lines = Files.lines(Paths.get(filename))) {
             lines.parallel().forEach(s -> words.addAll(Arrays.asList(s.split("\\W+"))));
         } catch (IOException e) {

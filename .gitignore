@@ -78,3 +78,4 @@ kotlin-ide/
 *.gz
 *.tar.gz
 *.mwb
+target/
